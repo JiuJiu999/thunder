@@ -29,14 +29,6 @@ class Response{
                         $data = json($data);
                 break;
             }
-            case 'integer' :{
-                $data = (int)$data;
-                break;
-            }
-            case 'string' :{
-                $data = (string)$data;
-                break;
-            }
             default:{
                 $data = self::getData();
             }
